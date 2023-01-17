@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Allergies"
+    android:background="#D3E4EA">
+
+    <TextView
+        android:id="@+id/allergyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="148dp"
+        android:text="Add allergies"
+        android:textColor="#009FE3"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:autofillHints=""
+        android:background="@drawable/bp_background_shape"
+        android:hint="Enter the allergies..."
+        android:padding="12dp"
+        android:layout_below="@+id/allergyText"
+        android:textColorHint="#78909C"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+        android:inputType="textCapWords" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/allergyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_below="@+id/editItem"
+        android:text="Add"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <ListView
+        android:id="@+id/allergyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/allergyBtn"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="218dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clearAllergyBtn"
+        android:layout_width="55dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="#009FE3"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/ic_baseline_delete_outline_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</RelativeLayout>
